@@ -22,4 +22,11 @@ vim.fn.sign_define("DiagnosticSignHint",
 -- vim.fn.sign_define("DiagnosticSignHint",
 --                    {text = "", texthl = "DiagnosticSignHint"})
 
-require("neo-tree").setup({})
+require("neo-tree").setup({
+  filesystem = {
+    filtered_items = {
+      hide_dotfiles = false,
+      hide_gitignored = false, 
+    },
+  },
+})

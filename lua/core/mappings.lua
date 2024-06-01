@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 
 -- NeoTree
-vim.keymap.set('n', '<leader>E', ':Neotree float reveal<CR>')
-vim.keymap.set('n', '<leader>e', ':Neotree left reveal<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree float reveal<CR>')
+vim.keymap.set('n', '<leader>E', ':Neotree left reveal<CR>')
 vim.keymap.set('n', '<leader>o', ':Neotree float git_status<CR>')
 
 -- Navigation
@@ -19,7 +19,7 @@ vim.keymap.set('n', '\\', ':split<CR>')
 -- Other
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
-vim.keymap.set('n', '<leader>Q', ':qall<CR>')
+vim.keymap.set('n', '<leader>Q', ':q!<CR>')
 vim.keymap.set('n', '<leader>x', ':BufferLinePickClose<CR>')
 vim.keymap.set('n', '<leader>X', ':BufferLineCloseRight<CR>')
 vim.keymap.set('n', '<leader>s', ':BufferLineSortByTabs<CR>')
