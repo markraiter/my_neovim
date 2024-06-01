@@ -60,3 +60,6 @@ vim.api.nvim_set_keymap('n', '<leader>P', '"+P', { noremap = true, silent = true
 vim.api.nvim_set_keymap('v', '<leader>p', '"+p', { noremap = true, silent = true })
 -- Визуальный режим: Вставка содержимого системного буфера обмена перед выделенным текстом
 vim.api.nvim_set_keymap('v', '<leader>P', '"+P', { noremap = true, silent = true })
+
+-- LSP mappings
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, { noremap = true, silent = true })
